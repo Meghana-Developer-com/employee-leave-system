@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+
+    <!-- Servlet Definitions -->
+
+    <servlet>
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>com.gmuni.RegisterServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.gmuni.LoginServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ApplyLeaveServlet</servlet-name>
+        <servlet-class>com.gmuni.ApplyLeaveServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ApproveLeaveServlet</servlet-name>
+        <servlet-class>com.gmuni.ApproveLeaveServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>com.gmuni.LogoutServlet</servlet-class>
+    </servlet>
+
+    <!-- Servlet Mappings -->
+
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/register</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ApplyLeaveServlet</servlet-name>
+        <url-pattern>/applyLeave</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ApproveLeaveServlet</servlet-name>
+        <url-pattern>/approveLeave</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+
+    <!-- Welcome files (landing page when accessing root URL) -->
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+        <welcome-file>welcome.jsp</welcome-file>
+        <welcome-file>login.jsp</welcome-file>
+    </welcome-file-list>
+
+</web-app>
